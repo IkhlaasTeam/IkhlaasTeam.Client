@@ -3,6 +3,7 @@ import './Utils.scss'
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa";
 import { RiSearchLine } from "react-icons/ri";
+import productimage from '../assests/images/Market-plase-shc-img.png'
 
 const Container = ({children}) => {
   return (
@@ -19,21 +20,21 @@ const Button = ({children}) => {
 const Card = () => {
   return (
     <div className="card">
-      <img src="../../../Market-place-products.png" alt="" />
+      <img src={productimage} alt="" />
       <div className="hover-look">
-        <span>
+        <button>
           <PiShoppingCartSimple />
-        </span>
-        <span>
+        </button>
+        <button>
           <FaRegHeart />
-        </span>
-        <span>
+        </button>
+        <button>
           <RiSearchLine />
-        </span>
+        </button>
       </div>
       <div>
         <h5>Beach Spider Lily</h5>
-        <h5 className="price">$129.00</h5>
+        <strong className="price">$129.00</strong>
       </div>
     </div>
   );
