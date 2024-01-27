@@ -1,4 +1,5 @@
 import React from "react";
+import AdminTable from "../../layout/admin-table/AdminTable";
 
 const ManageHashar = () => {
   return (
@@ -6,6 +7,7 @@ const ManageHashar = () => {
       <div className="title">
         <h1>Manage Hashar</h1>
       </div>
+      <AdminTable/>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const HomeNav = () => {
     <Container>
      <nav className='main-navbar'>
       <h1 className="logo"><Link to={"/"}>Yashil Bozor</Link></h1>
-      <Button><Link to='/login'>Login</Link></Button>
+      <Link className='btn' to='/login'>Login</Link>
     </nav>
    </Container>
   )

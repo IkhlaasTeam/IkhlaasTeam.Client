@@ -1,4 +1,5 @@
 import React from 'react'
+import AdminTable from '../../layout/admin-table/AdminTable';
 
 const Sellers = () => {
   return (
@@ -6,6 +7,7 @@ const Sellers = () => {
       <div className="title">
         <h1>Sellers</h1>
       </div>
+      <AdminTable/>
     </div>
   );
 }

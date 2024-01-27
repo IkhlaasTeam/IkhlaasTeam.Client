@@ -1,26 +1,17 @@
+import AdminTable from "../../layout/admin-table/AdminTable";
 import "./ManageProducts.scss";
+import { useLocation } from "react-router-dom";
+
 
 const ManageProducts = () => {
+  const {pathname} = useLocation()
+  console.log(pathname);
   return (
-    <div className="ManageProducts">
-      <div className="title">
+    <div className="manage-products">
+            <div className="title">
         <h1>Manage Products</h1>
       </div>
-      <form>
-        <input type="text" placeholder="Write product..." required="required"/>
-        <button>Add Products</button>
-      </form>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <AdminTable/>
     </div>
   );
 };

@@ -19,7 +19,7 @@ const RouteController = () => {
       <Route path="market-place" element={<MarketPlace />} />
       <Route path="hashar" element={<Hashar />} />
       <Route path='admin' element={<Admin/>}>
-          <Route index element={<ManageProducts/>}/>
+          <Route path='' element={<ManageProducts/>}/>
           <Route path='sellers' element={<Sellers/>}/>
           <Route path='manage-hashar' element={<ManageHashar/>}/>
        </Route>
